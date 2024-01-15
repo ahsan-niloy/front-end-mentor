@@ -2,8 +2,7 @@
   font-family: "figtree";
   font-display: swap;
   font-weight: 100 900;
-  src: url(/blog-preview-card-main/assets/fonts/Figtree-VariableFont_wght.ttf)
-    format("truetype");
+  src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format("truetype");
 }
 body {
   background-color: hsl(47, 88%, 63%);
@@ -22,6 +21,24 @@ body {
   gap: 20px;
   padding: 25px;
   background-color: white;
+
+  /* shadow  */
+  box-shadow: 7px 7px black;
+  transition: 700ms;
+}
+
+.containerMain:hover {
+  box-shadow: 15px 15px;
+  transition: 700ms;
+}
+
+h2 {
+  color: black;
+  transition: 500ms;
+}
+.containerMain:hover h2 {
+  color: hsl(47, 88%, 63%);
+  transition: 500ms;
 }
 
 #thumbnail {
@@ -68,4 +85,8 @@ h2 {
 }
 #user img {
   height: 32px;
+}
+
+.attribution {
+  width: 100%;
 }
