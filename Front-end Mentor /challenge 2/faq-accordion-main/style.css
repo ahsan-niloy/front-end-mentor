@@ -1,0 +1,90 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lightpink: hsl(275, 100%, 97%);
+  --grayishpurple: hsl(292, 16%, 49%);
+  --darkpurple: hsl(291, 64%, 37%);
+}
+@font-face {
+  font-family: "WorkSans";
+  font-size: 100 900;
+  src: url(assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+body {
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: var(--lightpink);
+  font-family: "WorkSans";
+}
+.pad {
+  margin: 0rem 2rem;
+}
+
+.container {
+  background-color: var(--white);
+  max-width: 35rem;
+  margin: auto;
+  margin-top: 10rem;
+  padding: 3rem;
+  border-radius: 20px;
+}
+
+.faq {
+  font-size: 3.5rem;
+  font-weight: 800;
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.questions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin: 1rem 0rem;
+}
+.questionSection:not(:last-child) {
+  border-bottom: 2px solid var(--lightpink);
+  padding-bottom: 1rem;
+}
+.questionSection .questions button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+}
+.questionSection .questions button:hover {
+  color: var(--darkpurple);
+  transition: 300ms;
+}
+
+.description {
+  line-height: 1.4rem;
+  color: var(--grayishpurple);
+}
+.icon img {
+  min-width: 30px;
+}
+.icon .icon-minus {
+  display: none;
+}
+
+.description {
+  background-color: var(--white);
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 200ms ease;
+}
+
+@media (max-width: 830px) {
+  body {
+    background-image: url(assets/images/background-pattern-mobile.svg);
+  }
+}
+
+.attribution {
+  margin-top: 20vh;
+}
