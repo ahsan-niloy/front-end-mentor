@@ -51,11 +51,12 @@ h1 {
   font-family: "Young Serif";
   font-size: 3rem;
   color: var(--DarkCharcoal);
+  line-height: 3rem;
 }
 
 .containerPrepTime {
   background-color: var(--RoseWhite);
-  padding: 2rem;
+  padding: 1rem;
 }
 h3 {
   font-size: 1.3rem;
@@ -93,4 +94,25 @@ li::marker {
 
 li {
   padding-left: 1rem;
+}
+b {
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 0px;
+    padding: 0px;
+  }
+  .container img {
+    border-radius: 0px;
+  }
+  .container *:not(img, b) {
+    padding: 1rem 0rem;
+    margin-bottom: 0rem;
+    margin: 0rem 1.5rem;
+  }
 }
