@@ -1,0 +1,179 @@
+:root {
+  --lightRed: hsl(0, 100%, 67%, 0.15);
+  --orangeyYellow: hsl(39, 100%, 56%, 0.15);
+  --greenTeal: hsl(166, 100%, 37%, 0.15);
+  --cobalBlue: hsl(234, 85%, 45%, 0.15);
+
+  /* gradient  */
+  --lightSlateBlueBackground: hsl(252, 100%, 67%);
+  --lightRoyalBlueBackground: hsl(241, 81%, 54%);
+  --violetBlueCircle: hsla(256, 72%, 46%, 1);
+  --persianBlueCircle: hsla(241, 72%, 46%, 0);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --paleBlue: hsl(221, 100%, 96%);
+  --lightLavender: hsl(241, 100%, 89%);
+  --darkGrayBlue: hsl(224, 30%, 27%);
+}
+@font-face {
+  font-family: "Hanken Grotesk";
+  font-weight: 500 800;
+  src: url(assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body {
+  font-family: "Hanken Grotesk";
+  font-size: 18px;
+  background-color: var(--paleBlue);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--white);
+  width: min-content;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  text-align: center;
+  background-image: linear-gradient(
+    var(--lightSlateBlueBackground),
+    var(--lightRoyalBlueBackground)
+  );
+  padding: 2.5rem;
+  border-radius: 30px;
+  color: var(--white);
+  gap: 2rem;
+}
+@media (max-width: 520px) {
+  .container {
+    flex-direction: column;
+    border-radius: 0px;
+    width: 100%;
+    margin-top: 0vh;
+  }
+  .leftSection {
+    border-radius: 0px 0px 30px 30px;
+    max-width: 100vw;
+  }
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.leftSection h3 {
+  color: var(--lightLavender);
+}
+.circle {
+  position: relative;
+  background-image: linear-gradient(
+    var(--violetBlueCircle),
+    var(--persianBlueCircle)
+  );
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.leftDisplayNumber {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#leftBigNumbers {
+  font-size: 4rem;
+  font-weight: 600;
+}
+#leftSmallNumber {
+  color: var(--lightLavender);
+}
+
+#status {
+  font-size: 2rem;
+}
+
+.leftSection p {
+  padding: 0px 20px;
+  line-height: 1.5rem;
+}
+
+.statsTable {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  /* background-color: red; */
+  border-radius: 0.5rem;
+}
+.statsTable .number {
+  white-space: nowrap;
+  color: rgb(151, 151, 151);
+}
+.statsTable .number span {
+  color: var(--darkGrayBlue);
+  font-weight: 700;
+}
+.statsName {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.rightSection {
+  padding: 2.5rem;
+}
+
+.rightSection h3 {
+  margin-bottom: 2rem;
+}
+
+.one {
+  background-color: var(--lightRed);
+  color: hsl(0, 100%, 67%);
+}
+.two {
+  background-color: var(--orangeyYellow);
+  color: hsl(39, 100%, 56%);
+}
+
+.three {
+  background-color: var(--greenTeal);
+  color: hsl(166, 100%, 37%);
+}
+.four {
+  background-color: var(--cobalBlue);
+  color: hsl(234, 85%, 45%);
+}
+
+.btn {
+  border: none;
+  background-color: var(--darkGrayBlue);
+  color: var(--white);
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 0rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+}
+
+.btn:hover {
+  background-image: linear-gradient(
+    var(--lightSlateBlueBackground),
+    var(--lightRoyalBlueBackground)
+  );
+}
+
+.attribution {
+  margin: 10px 0px;
+}
