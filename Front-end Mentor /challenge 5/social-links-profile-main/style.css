@@ -1,0 +1,58 @@
+:root {
+  /* primary  */
+  --Green: hsl(75, 94%, 57%);
+  /* Neutral  */
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 20%);
+  --DarkGrey: hsl(0, 0%, 12%);
+  --OffBlack: hsl(0, 0%, 8%);
+}
+@font-face {
+  font-family: "inter";
+  src: url(assets/fonts/Inter-VariableFont_slnt\wght.ttf);
+}
+* {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--White);
+  text-align: center;
+}
+body {
+  background-color: var(--OffBlack);
+  font-family: "inter";
+}
+
+.container {
+  width: 300px;
+  margin: 20vh auto;
+  background-color: var(--DarkGrey);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.container img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.location {
+  color: var(--Green);
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--Grey);
+  padding: 1rem 0rem;
+  border-radius: 0.5rem;
+}
