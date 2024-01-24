@@ -1,0 +1,102 @@
+:root {
+  /* ### Primary */
+
+  --DarkCyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  --VeryDarkBlue: hsl(212, 21%, 14%);
+  --DarkGrayishBlue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/Users/ahsanhabib/Documents/Git Repo/front-end-mentor/Front-end Mentor /challenge 6/product-preview-card-component-main/fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+  font-weight: 700;
+}
+
+#mobileImg {
+  display: none;
+}
+
+body {
+  background-color: var(--Cream);
+  /* font-size: 14px; */
+}
+
+.container {
+  width: min-content;
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+  width: min-content;
+  border-radius: 0.5rem;
+  background-color: white;
+  margin: auto;
+}
+.leftSection {
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  overflow: hidden;
+}
+#desktopImg {
+  height: inherit;
+}
+.rightSection {
+  padding: 2rem;
+  display: flex;
+}
+
+.rightSection *:not(:last-child, .price, .regularPrice, img) {
+  padding-bottom: 1.5rem;
+}
+
+.catagoryText {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--DarkGrayishBlue);
+  letter-spacing: 0.5rem;
+}
+
+.productName {
+  font-size: 2rem;
+  font-family: "Fraunces";
+  font-weight: 700;
+}
+
+.description {
+  color: var(--DarkGrayishBlue);
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-family: "Montserrat";
+}
+.priceBox {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  align-items: center;
+}
+.price {
+  color: var(--DarkCyan);
+  font-family: "Fraunces";
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn {
+  background-color: var(--DarkCyan);
+
+  color: var(--White);
+  font-family: "Montserrat";
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
