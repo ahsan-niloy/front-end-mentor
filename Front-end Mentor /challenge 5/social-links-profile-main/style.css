@@ -36,6 +36,8 @@ body {
 
 .container img {
   width: 150px;
+  height: 150px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -48,11 +50,4 @@ body {
   color: var(--Green);
   font-weight: 600;
   margin-bottom: 0.8rem;
-}
-
-.btn {
-  width: 100%;
-  background-color: var(--Grey);
-  padding: 1rem 0rem;
-  border-radius: 0.5rem;
 }
