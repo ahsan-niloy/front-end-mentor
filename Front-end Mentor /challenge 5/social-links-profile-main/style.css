@@ -35,9 +35,7 @@ body {
 }
 
 .container img {
-  height: 150px;
   width: 150px;
-  object-fit: cover;
   border-radius: 50%;
 }
 
@@ -57,15 +55,4 @@ body {
   background-color: var(--Grey);
   padding: 1rem 0rem;
   border-radius: 0.5rem;
-}
-
-a {
-  display: block;
-  font-weight: 500;
-  transition: 300ms;
-}
-a:hover {
-  background-color: var(--Green);
-  color: var(--OffBlack);
-  transition: 300ms;
 }
