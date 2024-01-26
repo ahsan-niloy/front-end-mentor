@@ -16,21 +16,28 @@
   text-decoration: none;
   color: var(--White);
   text-align: center;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   background-color: var(--OffBlack);
   font-family: "inter";
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 .container {
-  width: 300px;
-  margin: 20vh auto;
+  max-width: 400px;
   background-color: var(--DarkGrey);
+  text-align: center;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  border-radius: 1rem;
+  margin: 1rem;
+
+  border-radius: 0.75rem;
   align-items: center;
 }
 
@@ -50,4 +57,27 @@ body {
   color: var(--Green);
   font-weight: 600;
   margin-bottom: 0.8rem;
+}
+
+.container ul {
+  margin-top: 2rem;
+}
+
+ul li a {
+  display: block;
+  background-color: var(--Grey);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: background-color 300ms;
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 2rem;
+}
+ul li a:hover {
+  background-color: var(--Green);
+  color: var(--White);
+  transition: 300ms;
+  color: var(--OffBlack);
 }
