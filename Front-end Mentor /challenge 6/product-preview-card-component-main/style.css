@@ -1,0 +1,44 @@
+:root {
+  /* ### Primary */
+
+  --DarkCyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  /* ### Neutral */
+
+  --VeryDarkBlue: hsl(212, 21%, 14%);
+  --DarkGrayishBlue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  background-color: var(--Cream);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("/Users/ahsanhabib/Documents/Git Repo/front-end-mentor/Front-end Mentor /challenge 6/product-preview-card-component-main/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Fraunces";
+  src: url("/Users/ahsanhabib/Documents/Git Repo/front-end-mentor/Front-end Mentor /challenge 6/product-preview-card-component-main/fonts/Fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+.container .leftSide img {
+  max-width: 300px;
+}
+
+.container {
+  display: flex;
+  max-width: 600px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: var(--White);
+}
+
+.rightSide {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
