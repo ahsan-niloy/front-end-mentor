@@ -1,0 +1,142 @@
+:root {
+  /* ### Primary */
+
+  --Orange: hsl(25, 97%, 53%);
+
+  /* ### Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --LightGrey: hsl(217, 12%, 63%);
+  --MediumGrey: hsl(216, 12%, 54%, 0.2);
+  --DarkBlue: hsl(213, 19%, 18%);
+  --VeryDarkBlue: hsl(216, 12%, 8%);
+
+  /* fonts  */
+  --Overpass: "Overpass", sans-serif;
+}
+
+/* @font-face {
+  font-family: "Overpass";
+  src: url("/Users/ahsanhabib/Documents/Git Repo/front-end-mentor/Front-end Mentor /challenge 7/interactive-rating-component-main/fonts/Overpass/Overpass-VariableFont_wght.ttf");
+} */
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: var(--VeryDarkBlue);
+  font-family: var(--Overpass);
+  color: var(--White);
+}
+
+.container {
+  background-color: var(--DarkBlue);
+  /* background: linear-gradient(var(--MediumGrey), var(--DarkBlue)); */
+  padding: 2rem;
+  border-radius: 2rem;
+  max-width: 350px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.form img {
+  padding: 1rem;
+  background-color: var(--MediumGrey);
+  border-radius: 50%;
+  max-width: 1.2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+p {
+  color: var(--LightGrey);
+  line-height: 1.5rem;
+  font-size: 1.1rem;
+}
+.reviewNumber {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.number {
+  background-color: var(--MediumGrey);
+  height: 60px;
+  width: 60px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--Orange);
+  padding: 1.2rem;
+  border-radius: 3rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  transition: 500ms;
+}
+.number:hover {
+  background-color: var(--Orange);
+  transition: 500ms;
+}
+
+.thankYou img {
+  display: block;
+  margin: auto;
+}
+
+.thankYou {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.selectingTextBox {
+  display: inline-block;
+  margin: auto;
+
+  background-color: var(--MediumGrey);
+  padding: 8px 16px 7px;
+  border-radius: 1rem;
+  color: var(--Orange);
+}
+
+.thankYou p {
+  font-size: 15.5px;
+}
+
+.attribution {
+  padding-top: 1rem;
+}
+
+.display {
+  display: none;
+}
+
+.selected {
+  background-color: var(--LightGrey);
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 70vw;
+    margin: 2rem;
+    min-width: 250px;
+  }
+  .number {
+    height: 12vw;
+    width: 80vw;
+  }
+}
