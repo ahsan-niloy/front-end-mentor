@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("./fonts/Outfit/Outfit-VariableFont_wght.ttf");
+  font-weight: 300, 400, 600;
+}
+
+:root {
+  /* ## Colors */
+
+  /* ### Primary */
+
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --VeryDarkBlue: hsl(217, 54%, 11%);
+  --VeryDarkBlue: hsl(216, 50%, 16%);
+  --VeryDarkBlue: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
