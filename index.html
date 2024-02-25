@@ -57,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div class="btnAddNew">
+        <div class="btnAddNew hide">
           <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -78,67 +78,14 @@
       <hr />
       <!-- Overall progress ends  -->
       <!-- Project Showcase section starts -->
-      <div class="cards">
-        <div class="cardContainer">
-          <div class="cardImg"></div>
-          <div class="cardDetails">
-            <div class="cardTitleSection">
-              <div class="cardTitle">Challenge <span>1</span></div>
-              <div id="priceStatus">Free</div>
-            </div>
-            <div class="cardDescription">
-              Please add your content here :). Keep it short and simple.
-            </div>
-            <div class="languages">
-              <div id="html">HTML</div>
-              <div id="css">CSS</div>
-              <div id="javascript">Javascript</div>
-            </div>
-          </div>
-        </div>
-        <div class="cardContainer">
-          <div
-            class="cardImg"
-            style="background-image: url('./image/desktop-design.jpg')"
-          ></div>
-          <div class="cardDetails">
-            <div class="cardTitleSection">
-              <div class="cardTitle">Challenge <span>1</span></div>
-              <div id="priceStatus">Free</div>
-            </div>
-            <div class="cardDescription">
-              Please add your content here :). Keep it short and simple.
-            </div>
-            <div class="languages">
-              <div id="html">HTML</div>
-              <div id="css">CSS</div>
-              <div id="javascript">Javascript</div>
-            </div>
-          </div>
-        </div>
-        <div class="cardContainer">
-          <div class="cardImg"></div>
-          <div class="cardDetails">
-            <div class="cardTitleSection">
-              <div class="cardTitle">Challenge <span>1</span></div>
-              <div id="priceStatus">Free</div>
-            </div>
-            <div class="cardDescription">
-              Please add your content here :). Keep it short and simple. Please
-              add your content here :). Keep it short and simple.
-            </div>
-            <div class="languages">
-              <div id="html">HTML</div>
-              <div id="css">CSS</div>
-              <div id="javascript">Javascript</div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="cards"></div>
+      
+    </div>
       <!-- Project Showcase section ends -->
     </div>
     <!-- popup starts  -->
-    <div class="popup">
+<!--     
+    <div class="popup hide">
       <div class="popupContainer">
         <h3>Add New Challenge</h3>
         <form action="#">
@@ -151,19 +98,25 @@
             <option value="free">Free</option>
             <option value="premium">Premium</option></select
           ><br />
-          <label for="languages">Languages</label><br />
-          <input type="checkbox" name="html" id="html" /><label for="html">
-            HTML</label
-          >
-
-          <input type="checkbox" name="html" id="css" /><label for="css">
-            CSS</label
-          >
-          <input type="checkbox" name="html" id="javascript" /><label
-            for="javascript"
-          >
-            Javascript</label
-          ><br />
+          <label for="languages" id="languages">Languages</label><br />
+          <div>
+            <input type="checkbox" name="html" id="html" /><label for="html">
+              HTML</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" name="html" id="css" /><label for="css">
+              CSS</label
+            >
+          </div>
+          <div>
+            <input type="checkbox" name="html" id="javascript" /><label
+              for="javascript"
+            >
+              Javascript</label
+            >
+          </div>
+          <br />
           <label for="description">Challenge description</label><br />
           <textarea
             name="description"
@@ -172,10 +125,11 @@
             rows="7"
           ></textarea
           ><br />
-          <button>Submit</button>
+          <button id="submit">Submit</button>
+          <button id="btnClose">Close</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <!-- popup ends  -->
   </body>
 </html>

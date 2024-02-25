@@ -1,26 +1,102 @@
 [
   {
-    "img": "./image/front end mentor logo main.png",
-    "cost": "",
-    "description": "",
+    "img": "Front-end Mentor /challenge 1/blog-preview-card-main/design/desktop-design.jpg",
+    "nameC": "Blog preview",
+    "cost": "free",
+    "description": "This HTML & CSS-only challenge is a perfect project for beginners getting up to speed with HTML and CSS fundamentals",
     "html": true,
     "css": true,
-    "javascript": true
+    "javascript": false,
+    "link": "Front-end Mentor /challenge 1/blog-preview-card-main/index.html"
   },
   {
-    "img": "./image/front end mentor logo main.png",
-    "cost": "",
-    "description": "",
+    "img": "Front-end Mentor /challenge 2/faq-accordion-main/design/desktop-design.jpg",
+    "nameC": "FAQ accordion",
+    "cost": "free",
+    "description": "In this challenge, you'll build an FAQ accordion. This is an extremely common front-end pattern, so it's an excellent opportunity to get some practice in!",
     "html": true,
     "css": true,
-    "javascript": true
+    "javascript": true,
+    "link": "Front-end Mentor /challenge 2/faq-accordion-main/index.html"
   },
   {
-    "img": "./image/front end mentor logo main.png",
-    "cost": "",
-    "description": "",
+    "img": "Front-end Mentor /challenge 3/results-summary-component-main/design/desktop-design.jpg",
+    "nameC": "Results summary component",
+    "cost": "free",
+    "description": "This challenge has something for everyone. It’s a HTML and CSS only project, but we’ve also provided a JSON file of the test results for anyone wanting to practice JS.",
     "html": true,
     "css": true,
-    "javascript": true
+    "javascript": false,
+    "link": "Front-end Mentor /challenge 3/results-summary-component-main/index.html"
+  },
+  {
+    "img": "Front-end Mentor /challenge 4/recipe-page-main/design/desktop-design.jpg",
+    "nameC": "Recipe page",
+    "cost": "free",
+    "description": "This challenge will help you focus on writing semantic HTML. Ensure you think through what HTML elements are most appropriate for each piece of content",
+    "html": true,
+    "css": true,
+    "javascript": false,
+    "link": "Front-end Mentor /challenge 4/recipe-page-main/index.html"
+  },
+  {
+    "img": "Front-end Mentor /challenge 5/social-links-profile-main/design/desktop-preview.jpg",
+    "nameC": "Social links profile",
+    "cost": "free",
+    "description": "In this small project, you'll build out your social link-sharing profile. You can even personalize it and use it to share all your social profiles!",
+    "html": true,
+    "css": true,
+    "javascript": false,
+    "link": "Front-end Mentor /challenge 5/social-links-profile-main/index.html"
+  },
+  {
+    "img": "Front-end Mentor /challenge 6/product-preview-card-component-main/design/desktop-design.jpg",
+    "nameC": "Product preview card component",
+    "cost": "free",
+    "description": "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.",
+    "html": true,
+    "css": true,
+    "javascript": false,
+    "link": "Front-end Mentor /challenge 6/product-preview-card-component-main/index.html"
+  },
+  {
+    "img": "Front-end Mentor /challenge 7/interactive-rating-component-main/design/desktop-design.jpg",
+    "nameC": "Interactive rating component",
+    "cost": "free",
+    "description": "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!",
+    "html": true,
+    "css": true,
+    "javascript": true,
+    "link": "Front-end Mentor /challenge 7/interactive-rating-component-main/index.html"
+  },
+  {
+    "img": "Front-end Mentor /challenge 8/qr-code-component-main/design/desktop-design.jpg",
+    "nameC": "QR code component",
+    "cost": "free",
+    "description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
+    "html": true,
+    "css": true,
+    "javascript": false,
+    "link": "Front-end Mentor /challenge 8/qr-code-component-main/index.html"
+  },
+  {
+    "img": "Front-end Mentor /challenge 9/nft-preview-card-component-main/design/desktop-design.jpg",
+    "nameC": "NFT preview card component",
+    "cost": "free",
+    "description": "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
+    "html": true,
+    "css": true,
+    "javascript": false,
+    "link": "Front-end Mentor /challenge 9/nft-preview-card-component-main/index.html"
+  },
+  {
+    "img": "Front-end Mentor /challenge 10/order-summary-component-main/design/desktop-design.jpg",
+    "nameC": "Order summary component",
+    "cost": "free",
+    "description": "A perfect project for newbies who are starting to build confidence with layouts!",
+    "html": true,
+    "css": true,
+    "javascript": false,
+    "link": "Front-end Mentor /challenge 10/order-summary-component-main/index.html"
   }
 ]

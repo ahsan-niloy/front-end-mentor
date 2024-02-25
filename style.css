@@ -24,10 +24,20 @@ body {
   color: var(--Primary);
   background-color: var(--White);
 }
+a {
+  text-decoration: none;
+}
 .cardContainer img {
   width: 200px;
 }
-
+.cardContainer {
+  transition: 300ms;
+}
+.cardContainer:hover {
+  scale: 1.03;
+  transition: 300ms;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 .container {
   margin: 0 8vw;
 }
@@ -137,7 +147,7 @@ hr {
 /* card section starts */
 .cards {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   justify-content: space-evenly;
   gap: 2rem;
 }
@@ -166,6 +176,11 @@ hr {
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--White);
+  white-space: nowrap;
+  overflow: hidden;
+  /* text-overflow: ellipsis; */
+  text-overflow: ellipsis ellipsis;
+  max-width: 16ch;
 }
 .cardTitleSection {
   display: flex;
@@ -215,7 +230,8 @@ hr {
   height: 100vh;
   width: 100vw;
   /* background-color: red; */
-  position: absolute;
+  position: fixed;
+
   top: 0;
   left: 0;
   display: grid;
@@ -231,9 +247,26 @@ hr {
   border-radius: 2rem;
 }
 
-.popupContainer input,
-textarea {
+.popupContainer input {
   margin: 5px 0px 10px 0px;
+  background-color: var(--Primary);
+  color: var(--White);
+  font-size: 1.3rem;
+  padding: 5px;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid var(--White);
+}
+
+.popupContainer textarea {
+  margin: 5px 0px 10px 0px;
+  background-color: var(--Primary);
+  color: var(--White);
+  font-size: 1.3rem;
+  padding: 5px;
+  outline: 0;
+  border: 1px solid var(--White);
+  border-radius: 10px;
 }
 .popupContainer h3 {
   font-size: 2rem;
@@ -243,12 +276,40 @@ textarea {
 }
 .popupContainer label {
   font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+#languages {
+  padding: 10px 0px 0px;
+  display: block;
 }
 
 #challengeName,
 #imgPath,
 #description {
   width: 100%;
+}
+.popupContainer button {
+  background-color: var(--White);
+  color: var(--Primary);
+  border: none;
+  border-radius: 1rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#btnClose {
+  background-color: transparent;
+  color: var(--White);
+  border: 1px solid var(--White);
+}
+.popupContainer button:hover {
+  scale: 1.05;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  transition: 300ms;
+}
+.hide {
+  display: none;
 }
 
 /* .popup input,
@@ -299,20 +360,28 @@ checkbox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 0rem 1rem;
+    /* margin: 0rem 1rem; */
     height: 40vw;
     justify-content: space-around;
   }
   * {
     word-spacing: 0px;
-    line-height: 1rem;
+    /* line-height: 1rem; */
   }
   .languages div::before {
     margin-bottom: 4px;
   }
+  .cardTitleSection {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 }
 
 @media (max-width: 450px) {
+  .cardTitle {
+    max-width: 35vw;
+  }
   #priceStatus {
     display: none;
   }
@@ -331,5 +400,12 @@ checkbox {
   .cardTitle {
     font-size: 14px;
     font-weight: 800;
+  }
+  .popupContainer {
+    width: 300px;
+  }
+
+  .popupContainer h3 {
+    font-size: 1.4rem;
   }
 }
