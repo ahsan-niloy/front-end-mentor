@@ -17,6 +17,7 @@
   --HTML: #f2672e;
   --Javascript: #f2bf26;
   --SourceCode: "Source Code Pro";
+  --progressBarWidth: 20%;
 }
 
 body {
@@ -103,7 +104,7 @@ nav .navigation .profile {
 .progressBar::before {
   content: "";
   background-color: var(--White);
-  width: 80%;
+  width: var(--progressBarWidth);
   height: 6px;
 }
 .progressFooter {

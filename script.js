@@ -7,6 +7,9 @@ const popup = document.querySelector(".popup");
 const btnClose = document.getElementById("btnClose");
 const submit = document.getElementById("submit");
 
+const progressBar = document.querySelector(".progressBar");
+const progressNumber = document.getElementById("progressNumber");
+const totalChallenges = document.getElementById("totalChallenges");
 const htmlContent = function (content) {
   return `<a href="${content.link}" target=”_blank”>
   <div class="cardContainer">
@@ -46,6 +49,17 @@ const fetchDataAndUpdate = async function () {
 
     const data = await response.json();
     existingData = data;
+
+    // updating progressNumber
+    progressNumber.textContent = data.length;
+
+    // Update prpgress bar CSS properties in :root
+    document.documentElement.style.setProperty(
+      "--progressBarWidth",
+      `${Math.floor(
+        (100 / Number(totalChallenges.textContent)) * data.length
+      )}%`
+    );
 
     data.forEach((element) => {
       cards.insertAdjacentHTML("beforeend", htmlContent(element));
